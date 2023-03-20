@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --headerBG: none;
+    --fontColor: #6B63E3;
+    --color: rgba(0, 255, 191, 0.5)
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    position: absolute;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgba(255, 72, 0, 1);
+}
+
+span.clickText {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: '方正舒体';
+    cursor: default;
+    transition: 1s;
+}
+
+div.clickText {
+    position: absolute;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+@keyframes hidden {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
